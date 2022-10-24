@@ -1,0 +1,11 @@
+{
+  "packages": [
+    "python310",
+    "go",
+    "ruby",
+    "nix"
+  ],
+  "shell": {
+    "init_hook": null
+  }
+}
