@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Populate nix cache
-devbox shell --print-env > /dev/null
+devbox shell -- echo "Initialization Done!"
