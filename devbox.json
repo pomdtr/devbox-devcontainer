@@ -1,7 +1,8 @@
 {
   "packages": [
     "python310",
-    "go"
+    "go",
+    "nodePackages.zx"
   ],
   "shell": {
     "init_hook": null
