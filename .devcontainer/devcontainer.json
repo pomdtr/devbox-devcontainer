@@ -14,6 +14,9 @@
 		"source=nix,target=/nix,type=volume"
 	],
 	"extensions": [],
+	"remoteEnv": {
+		"PATH": "${containerWorkspaceFolder}/.devbox/nix/profile/default/bin:${containerEnv:PATH}"
+	},
 	"customizations": {
 		"vscode": {
 			"settings": {

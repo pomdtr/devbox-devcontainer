@@ -1,6 +1,7 @@
 {
   "packages": [
-    "python310"
+    "python310",
+    "go"
   ],
   "shell": {
     "init_hook": null
