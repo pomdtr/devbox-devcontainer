@@ -23,7 +23,8 @@
 				"python.defaultInterpreterPath": "${containerWorkspaceFolder}/.devbox/nix/profile/default/bin/python3"
 			},
 			"extensions": [
-				"ms-python.python"
+				"ms-python.python",
+				"golang.go"
 			]
 		}
 	},
