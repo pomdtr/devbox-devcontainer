@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# Populate nix cache
-devbox shell --print-env
+# Populate nix cache, and setup terminal
+devbox shell --print-env >> ~/.bashrc
