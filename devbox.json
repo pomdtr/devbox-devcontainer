@@ -4,5 +4,8 @@
     "go_1_19",
     "gh",
     "nodePackages.zx"
-  ]
+  ],
+  "shell": {
+    "init_hook": null
+  }
 }
