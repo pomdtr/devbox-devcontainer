@@ -8,11 +8,9 @@
 		// Use bullseye on local arm64/Apple Silicon.
 		"args": {
 			"VARIANT": "bullseye"
-		}
+		},
+		"context": ".."
 	},
-	"mounts": [
-		"source=nix,target=/nix,type=volume"
-	],
 	"extensions": [],
 	"remoteEnv": {
 		"PATH": "${containerWorkspaceFolder}/.devbox/nix/profile/default/bin:${containerEnv:PATH}"
@@ -28,7 +26,7 @@
 			]
 		}
 	},
-	"postCreateCommand": "./.devcontainer/post-create.sh",
+	"postCreateCommand": ".devcontainer/post-create.sh",
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
 }
