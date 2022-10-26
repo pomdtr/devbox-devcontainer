@@ -1,2 +1,7 @@
 image:
-  file: ./Dockerfile
+  file: .devcontainer/Dockerfile
+
+vscode:
+  extensions:
+    - "ms-python.python"
+    - "golang.go"
