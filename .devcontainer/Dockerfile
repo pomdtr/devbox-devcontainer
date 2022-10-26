@@ -12,7 +12,7 @@ USER vscode
 
 # Install nix
 ARG NIX_INSTALL_SCRIPT=https://nixos.org/nix/install
-RUN curl -L ${NIX_INSTALL_SCRIPT} | sh -s -- --no-daemon
+RUN curl -fsSL ${NIX_INSTALL_SCRIPT} | sh -s -- --no-daemon
 ENV PATH /home/vscode/.nix-profile/bin:${PATH}
 
 # install devbox
