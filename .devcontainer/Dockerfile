@@ -19,5 +19,5 @@ ENV PATH /home/vscode/.nix-profile/bin:${PATH}
 RUN sudo mkdir /devbox && sudo chown vscode /devbox
 RUN curl -fsSL https://get.jetpack.io/devbox | FORCE=1 bash
 COPY devbox.json /devbox/devbox.json
-RUN devbox shell --config /devbox/devbox.json -- echo "Devbox Store Populated"
+RUN devbox shell --config /devbox/devbox.json -- echo "Nix Store Populated"
 ENV PATH /devbox/.devbox/nix/profile/default/bin:${PATH}

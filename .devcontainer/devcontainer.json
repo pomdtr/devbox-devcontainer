@@ -10,7 +10,6 @@
 			"VARIANT": "bullseye"
 		}
 	},
-	"extensions": [],
 	"customizations": {
 		"vscode": {
 			"settings": {
