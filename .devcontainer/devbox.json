@@ -1,7 +1,7 @@
 {
   "packages": [
     "python310",
-    "go",
+    "go_1_19",
     "nodePackages.zx"
   ],
   "shell": {
