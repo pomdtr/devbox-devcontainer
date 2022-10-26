@@ -8,8 +8,7 @@
 		// Use bullseye on local arm64/Apple Silicon.
 		"args": {
 			"VARIANT": "bullseye"
-		},
-		"context": ".."
+		}
 	},
 	"customizations": {
 		"vscode": {
