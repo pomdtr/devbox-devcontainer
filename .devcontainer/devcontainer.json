@@ -3,12 +3,13 @@
 {
 	"name": "Debian",
 	"build": {
-		"dockerfile": "Dockerfile",
+		"dockerfile": "../Dockerfile",
 		// Update 'VARIANT' to pick an Debian version: bullseye, buster
 		// Use bullseye on local arm64/Apple Silicon.
 		"args": {
 			"VARIANT": "bullseye"
-		}
+		},
+		"context": ".."
 	},
 	"customizations": {
 		"vscode": {
