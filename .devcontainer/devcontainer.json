@@ -8,17 +8,13 @@
 		// Use bullseye on local arm64/Apple Silicon.
 		"args": {
 			"VARIANT": "bullseye"
-		},
-		"context": ".."
+		}
 	},
 	"extensions": [],
-	"remoteEnv": {
-		"PATH": "${containerWorkspaceFolder}/.devbox/nix/profile/default/bin:${containerEnv:PATH}"
-	},
 	"customizations": {
 		"vscode": {
 			"settings": {
-				"python.defaultInterpreterPath": "${containerWorkspaceFolder}/.devbox/nix/profile/default/bin/python3"
+				"python.defaultInterpreterPath": "/devbox/.devbox/nix/profile/default/bin/python3"
 			},
 			"extensions": [
 				"ms-python.python",
@@ -26,7 +22,6 @@
 			]
 		}
 	},
-	"postCreateCommand": ".devcontainer/post-create.sh",
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
 }

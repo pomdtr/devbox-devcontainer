@@ -16,6 +16,8 @@ RUN curl -L ${NIX_INSTALL_SCRIPT} | sh -s -- --no-daemon
 ENV PATH /home/vscode/.nix-profile/bin:${PATH}
 
 # install devbox
+RUN sudo mkdir /devbox && sudo chown vscode /devbox
 RUN curl -fsSL https://get.jetpack.io/devbox | FORCE=1 bash
-COPY devbox.json /tmp/devbox.json
-RUN devbox shell --config /tmp/devbox.json -- echo "Cache Populated"
+COPY devbox.json /devbox/devbox.json
+RUN devbox shell --config /devbox/devbox.json -- echo "Devbox Store Populated"
+ENV PATH /devbox/.devbox/nix/profile/default/bin:${PATH}
