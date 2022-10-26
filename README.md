@@ -5,5 +5,5 @@ Example integration between devbox and VS Code Dev Containers.
 ## Adding a new dependency from the container
 
 ```sh
-devbox --config /devbox/devbox.json add python310
+devbox --config /devbox/devbox.json add python310 && copy /devbox/devbox.json .devcontainer/devbox.json
 ```
